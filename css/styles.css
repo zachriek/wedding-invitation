@@ -1,0 +1,843 @@
+:root {
+    --main-color: #f14e95;
+    --secondary-color: #fff;
+}
+
+::-webkit-selection {
+    color: var(--secondary-color);
+    background: var(--main-color);
+}
+
+::-moz-selection {
+    color: var(--secondary-color);
+    background: var(--main-color);
+}
+
+::selection {
+    color: var(--secondary-color);
+    background: var(--main-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--main-color);
+}
+
+body {
+    font-family: 'Work Sans', Arial, sans-serif;
+}
+
+.cover {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cover img {
+    border: 2px solid #333;
+}
+
+.cover .card {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    border: 3px solid #333;
+}
+
+.cover p {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.cover .cover-greeting {
+    font-size: 16px;
+    color: #686868;
+}
+
+.cover .guest-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.cover .guest-place-1 {
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.cover .guest-place-2 {
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.cover .buka-undangan-wrapper {
+    font-weight: bold;
+    font-size: 12px;
+    color: var(--main-color);
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+.cover #buka-undangan {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    font-weight: 600;
+}
+
+.home {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.home h1 {
+    font-family: 'Sacramento', Arial, serif;
+    font-size: 100px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .home h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home h1 {
+        font-size: 40px;
+    }
+}
+
+.home h2 {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 480px) {
+    .home h2 {
+        font-size: 16px;
+    }
+}
+
+.home span {
+    font-size: 32px;
+}
+
+@media (max-width: 768px) {
+    .home span {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home span {
+        font-size: 20px;
+    }
+}
+
+.brides h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--main-color);
+    font-family: 'Sacramento', Arial, serif;
+}
+
+@media screen and (max-width: 768px) {
+    .brides h2 {
+        font-size: 40px;
+    }
+}
+
+.brides p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #828282;
+}
+
+.brides .card {
+    border-radius: 20px;
+    border-top: 5px solid var(--main-color) !important;
+}
+
+.brides .card .mempelai-pria-nama,
+.brides .card .mempelai-wanita-nama {
+    font-family: 'Sacramento', Arial, serif;
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.photo-gallery h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--main-color);
+    font-family: 'Sacramento', Arial, serif;
+}
+
+@media screen and (max-width: 768px) {
+    .photo-gallery h2 {
+        font-size: 40px;
+    }
+}
+
+.video-gallery iframe {
+    width: 100%;
+    height: 400px;
+}
+
+.video-gallery h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--main-color);
+    font-family: 'Sacramento', Arial, serif;
+}
+
+@media screen and (max-width: 768px) {
+    .video-gallery h2 {
+        font-size: 40px;
+    }
+}
+
+.quran {
+    position: relative;
+    background-position: center !important;
+    background-attachment: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.quran::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.quran .card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+
+.quran .card p {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.quran .card h2 {
+    font-size: 60px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--main-color);
+    font-family: 'Sacramento', Arial, serif;
+}
+
+@media screen and (max-width: 768px) {
+    .quran .card h2 {
+        font-size: 40px;
+    }
+}
+
+.event p {
+    font-size: 18px;
+}
+
+.event .greet-1 {
+    color: #828282;
+}
+
+.event .greet-2 {
+    font-weight: 600;
+}
+
+.event .card {
+    border-radius: 20px;
+    border-top: 5px solid var(--main-color) !important;
+}
+
+.event .card h3 {
+    font-family: 'Sacramento', Arial, serif;
+    font-size: 40px;
+    color: var(--main-color);
+}
+
+.event .card i {
+    color: var(--main-color);
+}
+
+.event .card span {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.event .card p {
+    font-size: 18px;
+    color: #828282;
+}
+
+.event .card .btn-default {
+    box-shadow: rgba(0, 0, 0, 0.008) 0px 3px 6px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+}
+
+.event .card .btn-default i {
+    color: var(--secondary-color);
+}
+
+.event .card .btn-default span {
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 600;
+}
+
+.gift h2 {
+    font-size: 60px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--main-color);
+    font-family: 'Sacramento', Arial, serif;
+}
+
+@media screen and (max-width: 768px) {
+    .gift h2 {
+        font-size: 40px;
+    }
+}
+
+.gift p {
+    font-size: 18px;
+    color: #828282;
+}
+
+.gift .gift-card {
+    border-radius: 20px;
+    border-top: 5px solid var(--main-color) !important;
+}
+
+.gift .live-ig-card {
+    border-radius: 20px;
+}
+
+@media (max-width: 991px) {
+    .gift .live-ig-card {
+        text-align: center;
+    }
+}
+
+.gift .live-ig-card h3 {
+    font-family: 'Sacramento', Arial, serif;
+    font-size: 40px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.gift .no-rek-card span {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #828282;
+}
+
+.gift .no-rek-card .no-rek-btn-text,
+.gift .no-rek-card .no-rek-icon {
+    text-transform: capitalize;
+    font-size: 16px;
+    letter-spacing: 0;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.gift .btn-default {
+    box-shadow: rgba(0, 0, 0, 0.008) 0px 3px 6px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+}
+
+.health-protocol {
+    background: var(--main-color);
+}
+
+.health-protocol h2 {
+    font-size: 60px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-family: 'Sacramento', Arial, serif;
+}
+
+@media screen and (max-width: 768px) {
+    .health-protocol h2 {
+        font-size: 40px;
+    }
+}
+
+.health-protocol p {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.map h2 {
+    font-size: 60px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--main-color);
+    font-family: 'Sacramento', Arial, serif;
+}
+
+@media screen and (max-width: 768px) {
+    .map h2 {
+        font-size: 40px;
+    }
+}
+
+.map p {
+    font-size: 18px;
+    color: #828282;
+}
+
+.map .btn-default {
+    box-shadow: rgba(0, 0, 0, 0.008) 0px 3px 6px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+}
+
+.testimonial-1 {
+    position: relative;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+.testimonial-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.testimonial-1 h2 {
+    font-size: 60px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--main-color);
+    font-family: 'Sacramento', Arial, serif;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-1 h2 {
+        font-size: 40px;
+    }
+}
+
+.testimonial-1 p {
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+
+.testimonial-1 .form-control {
+    background: rgba(0, 0, 0, 0.5);
+    border: none !important;
+    color: var(--secondary-color);
+    font-size: 16px !important;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.testimonial-1 .form-control::-webkit-input-placeholder {
+    color: var(--secondary-color);
+}
+
+.testimonial-1 .form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: var(--secondary-color);
+}
+
+.testimonial-1 .form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: var(--secondary-color);
+}
+
+.testimonial-1 .form-control:-ms-input-placeholder {
+    color: var(--secondary-color);
+}
+
+.testimonial-1 .form-control:focus {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-1 .btn-default {
+    box-shadow: rgba(0, 0, 0, 0.008) 0px 3px 6px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+}
+
+.testimonial-2 h2 {
+    font-size: 60px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--main-color);
+    font-family: 'Sacramento', Arial, serif;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-2 h2 {
+        font-size: 40px;
+    }
+}
+
+.testimonial-2 p {
+    font-size: 18px;
+    color: #828282;
+}
+
+.testimonial-2 .card h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: block;
+}
+
+.testimonial-2 .card span.kehadiran {
+    border-radius: 20px;
+    padding: 5px 10px;
+    background: var(--main-color);
+    color: var(--secondary-color);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.testimonial-2 .card figure {
+    margin-bottom: 10px;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    display: inline;
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-2 .card figure i {
+    color: var(--main-color);
+    font-size: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.testimonial-2 .card blockquote {
+    border: none;
+    margin: 30px auto;
+    width: 50%;
+    position: relative;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 992px) {
+    .testimonial-2 .card blockquote {
+        width: 100%;
+    }
+}
+
+.testimonial-2 .card blockquote p {
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.6em;
+}
+
+footer h2 {
+    font-size: 60px;
+    line-height: 1.5;
+    font-weight: bold;
+    color: var(--main-color);
+    font-family: 'Sacramento', Arial, serif;
+}
+
+@media screen and (max-width: 768px) {
+    footer h2 {
+        font-size: 40px;
+    }
+}
+
+footer p {
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+footer a,
+footer a:hover {
+    box-shadow: rgba(0, 0, 0, 0.008) 0px 3px 6px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
+    color: inherit;
+}
+
+footer i {
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+
+/* .... */
+/* ... */
+/* Countdown */
+.simply-countdown {
+    /* The countdown */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.simply-countdown > .simply-section {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+
+.simply-countdown > .simply-section > div {
+    /* countdown block inner div */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+    width: 120px;
+}
+
+.simply-countdown > .simply-section .simply-amount,
+.simply-countdown > .simply-section .simply-word {
+    color: var(--secondary-color);
+    /* amounts and words */
+}
+
+.simply-countdown > .simply-section .simply-amount {
+    font-size: 32px;
+    /* amounts */
+}
+
+.simply-countdown > .simply-section .simply-word {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    /* words */
+}
+
+/* .... */
+/* ... */
+/* Swiper JS */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--main-color);
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--main-color);
+}
+
+/* ... */
+/* .... */
+/* Icons, etc... */
+.mute {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    right: 30px;
+    bottom: 110px;
+}
+
+.button-menu {
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 20%) 0px 0px 8px 0px;
+    overflow: scroll;
+    font-style: normal !important;
+    text-align: center;
+}
+
+.button-menu::-webkit-scrollbar {
+    width: 1rem;
+}
+
+.button-menu::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+.button-menu::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: var(--main-color);
+}
+
+.button-menu-item {
+    width: 900px;
+    height: 60px;
+    display: inline-block;
+}
+
+.button-menu-item a {
+    float: left;
+    width: 12%;
+    height: 60px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #333;
+    font-style: normal !important;
+    text-decoration: none;
+}
+
+.button-menu-item a:hover {
+    color: var(--main-color);
+}
+
+.button-menu-item i {
+    font-size: 16px;
+}
+
+.button-menu-link.active {
+    color: var(--main-color) !important;
+}
+
+/* ------- */
+/* ---------------- */
+/* Bootstrap CSS Custom */
+.btn-default {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-default.focus,
+.btn-default:focus {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-default:hover {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-default.active,
+.btn-default:active,
+.open > .dropdown-toggle.btn-default {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-default.active.focus,
+.btn-default.active:focus,
+.btn-default.active:hover,
+.btn-default:active.focus,
+.btn-default:active:focus,
+.btn-default:active:hover,
+.open > .dropdown-toggle.btn-default.focus,
+.open > .dropdown-toggle.btn-default:focus,
+.open > .dropdown-toggle.btn-default:hover {
+    color: var(--secondary-color);
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-default.active,
+.btn-default:active,
+.open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+.btn-default.disabled.focus,
+.btn-default.disabled:focus,
+.btn-default.disabled:hover,
+.btn-default[disabled].focus,
+.btn-default[disabled]:focus,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default.focus,
+fieldset[disabled] .btn-default:focus,
+fieldset[disabled] .btn-default:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-default .badge {
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+}
+
+.form-control {
+    box-shadow: none;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    height: 54px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.form-control:active,
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: var(--main-color);
+}

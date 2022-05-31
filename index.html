@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- REQUIRED META AREA	 -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta property="og:title" content="Undangan Digital" />
+        <meta property="og:description" content="Halo Tamu Undangan! Kamu Di Undang.." />
+        <meta property="og:url" content="https://nikahyuk.com" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta property="og:type" content="website" />
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet" />
+
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+        <!-- Bootstrap CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+            integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+            crossorigin="anonymous"
+        />
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+        <!-- Fancy Box -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="./css/styles.css" />
+
+        <title>Ari & Nia</title>
+    </head>
+
+    <body style="background: url('./assets/img/texture.png')">
+        <!-- Cover Section -->
+        <section class="cover text-center" id="cover" style="background: url('./assets/img/latar_belakang_cover1645797491_texture.png')">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <img src="./assets/img/foto_kedua_mempelai1645797491_kita.png" alt="zachriek" class="img-fluid rounded-circle shadow" width="200" />
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <p>
+                            The Wedding of
+                            <br />
+                            Ari & Nia
+                        </p>
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <div class="col-lg-5 col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <span class="cover-greeting">Kepada Yth.</span>
+                                <br />
+                                <span class="cover-greeting">Bapak/Ibu/Saudara/i</span>
+                                <br />
+                                <span class="guest-name"></span>
+                                <br />
+                                <br />
+                                <span class="guest-place-1">Tamu Undangan</span>
+                                <br />
+                                <span class="guest-place-2">Di Tempat</span>
+                                <br />
+                                <br />
+                                <a class="buka-undangan-wrapper">
+                                    <button id="buka-undangan" type="button" class="btn btn-default">Buka Undangan</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End of Cover Section -->
+
+        <!-- Main -->
+        <main id="content" style="margin-bottom: 100px">
+            <!-- Home Section -->
+            <section class="home text-center text-white" id="home" style="background: url('./assets/img/latar_belakang_beranda1645797491_img_bg_2.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Ari & Nia</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Akan Segera Melangsungkan Pernikahan Suci</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <span class="full-date"></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--End of Home Section  -->
+
+            <!-- Brides Section -->
+            <section class="brides mt-5 py-5 text-center" id="brides">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h2>Assalamu'alaikum Warahmatullah</h2>
+                            <p>Dengan Rahmat Allah yang Maha Kuasa InsyaAllah kami akan melangsungkan pernikahan pada:</p>
+                            <h3 class="full-date my-4"></h3>
+                            <p>di Kediaman Mempelai Wanita</p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-md-6 mb-3">
+                            <div class="card shadow border-0">
+                                <div class="card-body">
+                                    <img src="./assets/img/1645538346_groom.jpg" alt="Pria" class="img-fluid rounded-circle my-4" />
+                                    <h1 class="mempelai-pria-nama">Muhammad Zachrie Kurniawan</h1>
+                                    <p class="mempelai-pria-ortu">Putra Bapak Yanto dan Ibu Supri</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card shadow border-0">
+                                <div class="card-body">
+                                    <img src="./assets/img/1645538346_bride.jpg" alt="Wanita" class="img-fluid rounded-circle my-4" />
+                                    <h1 class="mempelai-wanita-nama">Rachmi Kurniati</h1>
+                                    <p class="mempelai-wanita-ortu">Putri Bapak Yanto dan Ibu Supri</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Brides Section -->
+
+            <!-- Photo Gallery Section -->
+            <section class="photo-gallery mt-5 py-5" id="photo-gallery">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-md-8">
+                            <h2>Galeri Foto</h2>
+                        </div>
+                    </div>
+                    <div class="row d-none d-lg-flex mt-5">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="./assets/img/gallery-1.jpg" alt="Photo Gallery" class="img-thumbnail shadow" data-fancybox="gallery-desktop" />
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="./assets/img/gallery-2.jpg" alt="Photo Gallery" class="img-thumbnail shadow" data-fancybox="gallery-desktop" />
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="./assets/img/gallery-3.jpg" alt="Photo Gallery" class="img-thumbnail shadow" data-fancybox="gallery-desktop" />
+                        </div>
+                    </div>
+                    <div class="swiper d-lg-none text-center mt-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row justify-content-center">
+                                    <div class="col-10">
+                                        <img src="./assets/img/gallery-1.jpg" alt="Photo Gallery" class="img-thumbnail shadow" data-fancybox="gallery-mobile" />
+                                    </div>
+                                    <div class="col-10">
+                                        <img src="./assets/img/gallery-2.jpg" alt="Photo Gallery" class="img-thumbnail shadow" data-fancybox="gallery-mobile" />
+                                    </div>
+                                    <div class="col-10">
+                                        <img src="./assets/img/gallery-3.jpg" alt="Photo Gallery" class="img-thumbnail shadow" data-fancybox="gallery-mobile" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Photo Gallery Section -->
+
+            <!-- Video Gallery Section -->
+            <section class="video-gallery mt-5 py-5" id="video-gallery">
+                <div class="container">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-md-8">
+                            <h2>Galeri Video</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center mt-5">
+                        <div class="col-12">
+                            <iframe
+                                src="https://www.youtube.com/embed/mz0YeLEehI4"
+                                title="YouTube video player"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Video Gallery Section -->
+
+            <!-- Quran Section -->
+            <section class="quran mt-5 py-5" id="quran" style="background: url('./assets/img/latar_belakang_quran1645797491_gallery-3.jpg')">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card p-5 text-center">
+                                <div class="card-body">
+                                    <p>
+                                        " Dan di antara tanda-tanda kekuasaan-Nya diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu dapat ketenangan hati dan dijadikannya kasih
+                                        sayang di antara kamu. Sesungguhnya yang demikian menjadi tanda-tanda kebesaran-Nya bagi orang-orang yang berpikir. "
+                                    </p>
+                                    <h2>- Q.S. Ar-Rum: 21 -</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Quran Section -->
+
+            <!-- Event Section -->
+            <section class="event mt-5 py-5 text-center" id="event">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <p class="greet-1">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila bapak/ ibu/saudara/i berkenan hadir di acara Unduh Mantu putra putri kami.</p>
+                            <p class="greet-2">yang Insya Allah akan dilaksanakan pada :</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="simply-countdown simply-countdown-one"></div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-md-10">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="card border-0 shadow">
+                                        <div class="card-body">
+                                            <h3 class="py-4">Akad Nikah</h3>
+                                            <hr />
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <i class="bi bi-calendar-fill"></i>
+                                                    <span class="my-1 d-block">Tanggal</span>
+                                                    <span class="d-block"> 12/12/2022 </span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <i class="bi bi-clock-fill"></i>
+                                                    <span class="my-1 d-block">Pukul</span>
+                                                    <span class="d-block"> 10.00 - selesai </span>
+                                                </div>
+                                            </div>
+                                            <p>Bertempat di Kediaman Mempelai Wanita</p>
+                                            <a href="https://goo.gl/maps/zskRct31rLBiRWrVA" target="_blank" class="btn btn-default">
+                                                <i class="bi bi-geo-alt-fill"></i>
+                                                <span>Google Map</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card border-0 shadow">
+                                        <div class="card-body">
+                                            <h3 class="py-4">Resepsi Nikah</h3>
+                                            <hr />
+                                            <div class="row my-5">
+                                                <div class="col-6">
+                                                    <i class="bi bi-calendar-fill"></i>
+                                                    <span class="my-1 d-block">Tanggal</span>
+                                                    <span class="d-block"> 12/12/2022 </span>
+                                                </div>
+                                                <div class="col-6">
+                                                    <i class="bi bi-clock-fill"></i>
+                                                    <span class="d-block my-1">Pukul</span>
+                                                    <span class="d-block"> 22.00 - selesai </span>
+                                                </div>
+                                            </div>
+                                            <p>Bertempat di Kediaman Mempelai Pria</p>
+                                            <a href="https://goo.gl/maps/zskRct31rLBiRWrVA" target="_blank" class="btn btn-default">
+                                                <i class="bi bi-geo-alt-fill"></i>
+                                                <span>Google Map</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Event Section -->
+
+            <!-- Gift Section -->
+            <section class="gift mt-5 py-5" id="gift">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12">
+                            <div class="card gift-card border-0 shadow">
+                                <div class="card-body">
+                                    <!-- Kado Digital -->
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-8 text-center">
+                                            <h2>Kirim Kado</h2>
+                                            <p>
+                                                Doa Restu Anda merupakan karunia yang sangat berarti bagi kami. Dan jika memberi adalah ungkapan tanda kasih Anda, Anda dapat memberi kado secara
+                                                cashless.
+                                            </p>
+                                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#kadoDigitalModal">
+                                                <i class="bi bi-gift-fill"></i>
+                                                <span>Kado Digital</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <!-- End of Kado Digital -->
+
+                                    <!-- Live Instagram -->
+                                    <div class="row mt-5 p-3">
+                                        <div class="col-12">
+                                            <div class="card live-ig-card border-0 shadow">
+                                                <div class="card-body">
+                                                    <div class="row justify-content-center align-items-center">
+                                                        <div class="col-lg-2">
+                                                            <img src="./assets/img/foto_kedua_mempelai1645797491_kita.png" alt="Profile" class="img-fluid rounded-circle mb-3 mb-lg-0" width="100" />
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <p class="mb-1">The Wedding Of</p>
+                                                            <h3>Ari & Nia</h3>
+                                                            <p class="mt-4 mb-1"><span class="full-date"></span> / 10.00</p>
+                                                            <p>Instagram Live : @zachriek</p>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <a href="https://www.instagram.com/zachriek" class="btn btn-default" target="_blank">
+                                                                <i class="bi bi-instagram"></i>
+                                                                <span>Gabung Live via Instagram</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End of Live Instagram -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kado Digital Modal -->
+                <div class="modal fade" id="kadoDigitalModal" tabindex="-1" aria-labelledby="kadoDigitalModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="card no-rek-card border-0 text-center">
+                                    <div class="card-body">
+                                        <h2>Berikan Hadiah</h2>
+                                        <hr />
+                                        <p>Bagi yang ingin memberikan hadiah untuk pernikahan kami, silakan transfer ke rekening ya</p>
+                                        <img src="./assets/img/rekening1645599874_bni_logo.png" alt="Rekening" class="img-fluid mt-4" width="100" />
+                                        <span class="d-block mt-1"> BNI </span>
+                                        <span class="d-block mt-4" id="norek2"> 3048048284020088 </span>
+                                        <button class="btn btn-default clipboard mt-4" data-clipboard-action="copy" data-clipboard-target="#norek2">
+                                            <span class="no-rek-icon">
+                                                <i class="bi bi-clipboard-fill"></i>
+                                            </span>
+                                            <span class="no-rek-btn-text">Salin Nomor Rekening</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Gift Section -->
+
+            <!-- Health Protocol Section -->
+            <section class="health-protocol text-center mt-5 py-5" id="health-protocol">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h2>Protokol Kesehatan</h2>
+                            <p>
+                                Tanpa mengurangi rasa hormat demi mengurangi penyebaran pandemi, mohon untuk tetap mengikuti protokol kesehatan dan datang tepat waktu sesuai dengan jam yang sudah
+                                tertera diundangan.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="./assets/img/cucitangan.png" class="img-thumbnail rounded-circle mb-2" width="150" />
+                            <p>Mencuci Tangan</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="./assets/img/jagajarak.png" class="img-thumbnail rounded-circle mb-2" width="150" />
+                            <p>Menjaga Jarak</p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <img src="./assets/img/masker.png" class="img-thumbnail rounded-circle mb-2" width="150" />
+                            <p>Memakai Masker</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Health Protocol Section -->
+
+            <!-- Map Section -->
+            <section class="map mt-5 py-5" id="map">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h2>Peta Lokasi</h2>
+                            <p>Anda dapat menuju lokasi acara kami dengan bantuan peta dibawah ini atau anda bisa buka di</p>
+                            <a href="https://goo.gl/maps/zskRct31rLBiRWrVA" target="_blank" class="btn btn-default">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span>Google Map</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <iframe
+                                style="width: 100%; height: 500px"
+                                id="gmap_canvas"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.2965885631133!2d105.27092344979799!3d-5.3716616552171255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40db64c1f7e169%3A0x41eef686273565de!2sMetamorphosis%20Studio!5e0!3m2!1sid!2sid!4v1645601237706!5m2!1sid!2sid"
+                                frameborder="0"
+                                scrolling="no"
+                                marginheight="0"
+                                marginwidth="0"
+                            ></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Map Section -->
+
+            <!-- Footer -->
+            <footer class="footer mt-5 pt-5 text-center" id="footer">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <h2>Terima Kasih</h2>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-lg-6 col-md-8">
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-6">
+                                    <img src="./assets/img/brand_logo.jpg" alt="Footer Logo" class="img-fluid rounded-circle" />
+                                </div>
+                                <div class="col-6">
+                                    <p>
+                                        Photo and Video By
+                                        <br />
+                                        Metamorphosis Studio
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <a class="btn btn-default rounded-circle" href="https://www.instagram.com/metamorphosisstudio/" target="_blank">
+                                                <i class="bi bi-instagram"></i>
+                                            </a>
+                                            <span class="mx-2"></span>
+                                            <a class="btn btn-default rounded-circle" href="https://wa.me/message/VAZ7GA3SDIDYE1" target="_blank">
+                                                <i class="bi bi-whatsapp"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center text-center pt-5 mt-5">
+                        <div class="col-12">
+                            <p style="font-weight: 600">Copyright © 2022 zachriek All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+            <!-- Navbar -->
+            <div class="button-menu">
+                <div class="button-menu-item">
+                    <a href="#home" class="button-menu-link active">
+                        <i class="bi bi-house-door-fill"></i>
+                        <br />
+                        Beranda
+                    </a>
+                    <a href="#brides" class="button-menu-link">
+                        <i class="bi bi-people-fill"></i>
+                        <br />
+                        Mempelai
+                    </a>
+                    <a href="#photo-gallery" class="button-menu-link">
+                        <i class="bi bi-image-fill"></i>
+                        <br />
+                        Foto
+                    </a>
+                    <a href="#video-gallery" class="button-menu-link">
+                        <i class="bi bi-camera-reels-fill"></i>
+                        <br />
+                        Video
+                    </a>
+                    <a href="#event" class="button-menu-link">
+                        <i class="bi bi-calendar-event-fill"></i>
+                        <br />
+                        Acara
+                    </a>
+                    <a href="#gift" class="button-menu-link">
+                        <i class="bi bi-gift-fill"></i>
+                        <br />
+                        Kirim Kado
+                    </a>
+                    <a href="#health-protocol" class="button-menu-link">
+                        <i class="bi bi-file-medical-fill"></i>
+                        <br />
+                        Prokes
+                    </a>
+                    <a href="#map" class="button-menu-link">
+                        <i class="bi bi-map-fill"></i>
+                        <br />
+                        Map
+                    </a>
+                </div>
+            </div>
+            <!-- End of Navbar -->
+
+            <!-- Music -->
+            <audio loop src="./assets/img/music.mp3" id="audio"></audio>
+
+            <div class="mute shadow" id="mute">
+                <i class="bi bi-volume-up-fill"></i>
+            </div>
+            <!-- End of Music -->
+
+            <!-- Date -->
+            <div class="year" style="display: none">2022</div>
+            <div class="month" style="display: none">12</div>
+            <div class="day" style="display: none">12</div>
+            <div class="hours" style="display: none">12</div>
+            <!-- End of Date -->
+        </main>
+
+        <!-- Bootstrap JS -->
+        <script src="./js/jquery-3.6.0.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+            integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+        <!-- Simply Countdown -->
+        <script src="./js/simplyCountdown.js"></script>
+
+        <!-- Clipboard -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+
+        <!-- Fancy Box -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+        <!-- Custom Javascript -->
+        <script src="./js/main.js"></script>
+    </body>
+</html>
